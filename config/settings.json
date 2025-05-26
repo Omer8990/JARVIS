@@ -1,0 +1,27 @@
+{
+    "agent": {
+        "name": "Jarvis",
+        "version": "2.0",
+        "wake_word": "hey jarvis",
+        "response_timeout": 30,
+        "max_conversation_length": 100
+    },
+    "voice": {
+        "engine": "pyttsx3",
+        "rate": 150,
+        "volume": 0.9,
+        "language": "en-US"
+    },
+    "ai": {
+        "default_provider": "ollama",
+        "fallback_provider": "gemini",
+        "max_tokens": 1024,
+        "temperature": 0.7
+    },
+    "system": {
+        "auto_backup": true,
+        "backup_interval_hours": 24,
+        "max_log_size_mb": 100,
+        "enable_monitoring": true
+    }
+}

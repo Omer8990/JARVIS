@@ -1,0 +1,29 @@
+[Unit]
+Description=Jarvis AI Assistant
+After=network.target ollama.service
+Wants=ollama.service
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/jarvis_ai
+Environment=PATH=/home/pi/jarvis_ai/jarvis_env/bin
+ExecStart=/home/pi/jarvis_ai/jarvis_env/bin/python jarvis_agent.py
+Restart=always
+RestartSec=10
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/home/pi/jarvis_ai
+ProtectHome=true
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=jarvis
+
+[Install]
+WantedBy=multi-user.target

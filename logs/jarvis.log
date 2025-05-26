@@ -1,0 +1,5 @@
+2025-05-26 20:43:54,550 - Jarvis - INFO - Ollama connected successfully at http://localhost:11434
+2025-05-26 20:43:56,235 - Jarvis - INFO - Jarvis Agent initialized successfully
+2025-05-26 20:43:56,236 - Jarvis - INFO - Jarvis is now active. Say 'Hey Jarvis' to start listening.
+2025-05-26 20:43:56,236 - Jarvis - INFO - Speaking: Jarvis is now active. Say Hey Jarvis to start listening.
+2025-05-26 20:45:03,252 - Jarvis - INFO - Jarvis Agent shutting down...

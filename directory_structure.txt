@@ -1,0 +1,14 @@
+Jarvis AI Directory Structure:
+├── jarvis_ai/
+│   ├── jarvis_agent.py          # Main Jarvis code
+│   ├── requirements.txt         # Python dependencies
+│   ├── README.md               # Project documentation
+│   ├── config/
+│   │   ├── .env                 # Environment variables
+│   │   └── settings.json        # Configuration settings
+│   ├── logs/                    # Application logs
+│   ├── data/                    # Database and user data
+│   ├── backups/                 # Automatic backups
+│   ├── scripts/                 # Utility scripts
+│   ├── models/                  # Local AI models (Ollama)
+│   └── systemd/                 # System service files
